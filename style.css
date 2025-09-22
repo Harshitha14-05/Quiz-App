@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+/* Quiz Container */
+.quiz-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  width: 420px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Title */
+.quiz-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0072ff;
+}
+
+/* Question */
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Options */
+#options button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 2px solid #0072ff;
+  border-radius: 8px;
+  background: #f8f9fa;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#options button:hover {
+  background: #0072ff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Timer */
+#timer {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #0072ff;
+  font-weight: bold;
+}
+
+/* Next Button */
+#nextBtn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #28c76f;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
+}
+
+#nextBtn:hover {
+  background: #20a95c;
+  transform: scale(1.05);
+}
+
+/* Result */
+#result {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0072ff;
+}
+
+#result button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #ff6b6b;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#result button:hover {
+  background: #e04848;
+  transform: scale(1.05);
+}
